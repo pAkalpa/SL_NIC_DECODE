@@ -59,8 +59,6 @@ public class TenDigitDecoder extends TwelveDigitDecoder {
         TimeUnit time = TimeUnit.DAYS; // Create TimeUnit object and assign DAY as time unit
         long differenceYears = time.convert(differenceDate, TimeUnit.MILLISECONDS); // Convert into Days
 
-        String issueData = nicNumber.substring(5, 9);
-
 //        NIC Last Digit is showing Vote eligibility. V == Eligible for Vote : X == Not Eligible for Vote
         boolean votable = nicNumber.substring(nicLength-1).equals("V");
 
