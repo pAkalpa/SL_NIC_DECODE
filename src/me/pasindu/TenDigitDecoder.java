@@ -33,6 +33,9 @@ public class TenDigitDecoder extends TwelveDigitDecoder {
         String dayOfYearString = nicNumber.substring(2,5);
         int dayOfYear = Integer.parseInt(dayOfYearString);
 
+//        Digit 6 to 9 means serial number of the issued day
+        String serialNumber = nicNumber.substring(5,9);
+
         Calendar calender = Calendar.getInstance(); // Create Calendar Instance for Decode Birthday
         Calendar calenderNow = Calendar.getInstance(); // Create calendar Instance for get today Date
         calender.set(Calendar.YEAR,year); // Set Decoded Year as Year
@@ -63,6 +66,6 @@ public class TenDigitDecoder extends TwelveDigitDecoder {
 
         String eligibility = (votable)? "Eligible" : "not Eligible";
 
-        System.out.println("\nNIC No: " + nicNumber + "\nDate Of Birth: " + dayString + "\nGender: " + gender + "\nThis Person is " + eligibility + " for Voting." + "\nThis Person is " + differenceYears/365 + " Years Old.\n\n");
+        System.out.println("\nNIC No: " + nicNumber + "\nDate Of Birth: " + dayString + "\nGender: " + gender + "\nSerial Number: " + serialNumber + "\nThis Person is " + eligibility + " for Voting." + "\nThis Person is " + differenceYears/365 + " Years Old.\n\n");
     }
 }
