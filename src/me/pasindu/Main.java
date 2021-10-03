@@ -9,8 +9,8 @@ public class Main {
     }
 
     private static void ConsoleUI () {
-        int inputLength = 0;
-        String nicNumber = "";
+        int inputLength;
+        String nicNumber;
         do {
             System.out.print("Enter Your Sri Lankan NIC Number (New 12 Digit or Old 10 Digit): ");
             Scanner input = new Scanner(System.in);

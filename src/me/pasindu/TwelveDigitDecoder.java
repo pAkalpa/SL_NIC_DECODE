@@ -34,7 +34,7 @@ public class TwelveDigitDecoder {
         String gender;
         if (dayOfYear < 500) {
             gender = "Male";
-            calender.set(Calendar.DAY_OF_YEAR,dayOfYear-1); // Set Day Of Year as NIC digits 3 to 5
+            calender.set(Calendar.DAY_OF_YEAR,dayOfYear); // Set Day Of Year as NIC digits 3 to 5
         } else {
             gender = "Female";
             int femaleDOY = dayOfYear - 500; // For females dayOfYear subtract 500
