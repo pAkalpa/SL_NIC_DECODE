@@ -1,0 +1,14 @@
+
+vscode:
+  extensions:
+    - vscodevim.vim
+    - ritwickdey.liveserver
+    - akamud.vscode-theme-onedark
+    - redwan-hossain.auto-rename-tag-clone
+    - coenraads.bracket-pair-colorizer
+    - vscjava.vscode-java-debug
+    - ms-azuretools.vscode-docker
+    - vscjava.vscode-java-pack
+    - miguelsolorio.fluent-icons
+    - github.vscode-pull-request-github
+    - eamodio.gitlens
